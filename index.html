@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NFTSniper</title>
+    <!-- OpenGraph SEO meta tags -->
+    <meta content="nftsniper" name="description">
+    <meta content="nftsniper" name="keywords">
+    <!-- <meta content="images/banner.jpg" property="og:image"> -->
+    <meta content="NFTSniper<" property="og:title">
+    <meta content="website" property="og:type">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Circular-std CSS -->
+    <link rel="stylesheet" href="css/circular-std.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+function ethFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("eth");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the ETH address: " + copyText.value);
+}
+function solFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("sol");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the SOL address: " + copyText.value);
+}
+function adaFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("ada");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the ADA address: " + copyText.value);
+}
+    </script>
+    <style>
+        label {
+            width: 340px;
+            height: 35px;
+            margin: 30px auto;
+            display: block;
+        }
+
+
+        input {
+            width: 290px;
+            line-height: 35px;
+            font-size: 16px;
+            float: left;
+            padding: 0 8px;
+        }
+
+        input::-ms-clear {
+            display: none;
+        }
+
+ 
+
+        #eth {
+            background: #e6d3a3;
+            color: #fff;
+        }
+
+        #eth+button {
+            background: #e6d3a3;
+        }
+
+        #eth+button:hover {
+            background: #e6d3a3;
+        }
+
+        #sol {
+            background: #e6d3a3;
+            color: #fff;
+        }
+
+        #sol+button {
+            background: #e6d3a3;
+        }
+
+        #sol+button:hover {
+            background: #e6d3a3;
+        }
+
+        #ada {
+            background: #e6d3a3;
+            color: #fff;
+        }
+
+        #ada+button {
+            background: #e6d3a3;
+        }
+
+        #ada+button:hover {
+            background: #e6d3a3;
+        }
+    </style>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header>
+        <!-- Navbar -->
+        <div class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="#" width="400px"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                                <!--  <span class="navbar-toggler-icon"></span> -->
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-img">
+            <img src="images/banner-illustration.png" class="img-fluid" alt="#">
+
+            <!-- Main Title -->
+            <div class="main-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="hero-title">
+                                <p>Never miss another sale</p>
+                                <h1>SNIPE<br>
+                                    your next NFT</h1>
+                                <a href="#" data-toggle="modal" data-target="#contactmodal" class="btn btn-danger">Start
+                                    Hunting</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Main Title -->
+        </div>
+        <!--// Navbar -->
+
+        <!--  Contact Modal -->
+        <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-zoom" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <h3>How to Buy</h3>
+                        <h4>Step 1</h4>
+                        <p>Choose a payment address below and send the amount listed next to the currency</p>
+                        <p>We prefer Solana or Cardono and offer a discount on those.</p>
+                        <h5>Eth: .125 ETH</h5>
+                        <label>
+                            <input id="eth" type="text" readonly="readonly"
+                                value="0xF471F0d240e6CbE2a824CeF99664C8b1097cD44a" />
+                            <button type="button" onclick="ethFunction()">copy</button>
+                        </label>
+                        <h5>Sol: 3 SOL </h5>
+                        <label>
+                            <input id="sol" type="text" readonly="readonly"
+                                value="Bve98n9w9Wdtv2HFe6QN9WZzvvCm8a1m6s7CXBTEWNAM" />
+                            <button type="button" onclick="solFunction()">copy</button>
+                        </label>
+                        <h5>Ada: 160 ADA </h5>
+                        <label>
+                            <input id="ada" type="text" readonly="readonly"
+                                value="addr1qyvhpupsmacmr3vqh82mv84uxusqs6j7kmujw0g5zup4v9qewrcrphm3k8zcpww4kc0tcdeqpp49adheyu73g9cr2c2qzj5hlf" />
+                            <button type="button" onclick="adaFunction()">copy</button>
+                        </label>
+                        <h4>Step 2</h4>
+                        <p>Email your wallet and TXID to payments@nftsniper.xyz</p>
+                        <h4>Step 3</h4>
+                        <p>We will verify and email access to NFTSniper along with instructions</p>
+                        <p>You will be granted login access upon verification</p>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--  // Contact Modal -->
+        <!--==================== NEW BOT ====================-->
+        <div class="space bg-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center-title">
+                            <h2>GET READY TO SNIPE THOSE NFTs!</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-7 ml-auto">
+                        <div class="nftsniperbotc-title_wrap">
+                            <h5>Maximize your chances. </h5>
+                            <h6>Get that Drop.</h6>
+                            <p class="nftsniperbotc-para">This is NFTSniper, a program that helps NFT lovers get the
+                                drop on mints.
+                                Releases sell out in minutes, but NFTSniper is thousands of times faster than any human,
+                                this along with advanced tech means you never have to pay resell.
+
+                                NFTSniper has helped people snipe over 2000+ hyped nfts at mint.</p>
+                            <div class="nftsniperbotc-type d-flex align-items-center">
+                                <img src="images/tick.png" alt="#">
+                                <div class="nftsniperbotc-type_title">
+                                    <h6>STEP 1</h6>
+                                    <p>After purchase, register for an account using your wallet and txid. Once Logged
+                                        in just enter the URL of the drop.</p>
+                                </div>
+                            </div>
+                            <div class="nftsniperbotc-type d-flex align-items-center">
+                                <img src="images/tick.png" alt="#">
+                                <div class="nftsniperbotc-type_title">
+                                    <h6>STEP 2</h6>
+                                    <p>Click Run Bot. The bot first scans the page and selects the mint button,
+                                        pre-trained from hundreds of drops. Once located it loads and clicks faster than any human. We use a tuned gas monitor tool that reads users on chain and tx’s to determine optimal speed.</p>
+                                </div>
+                            </div>
+                            <div class="nftsniperbotc-type d-flex align-items-center">
+                                <img src="images/tick.png" alt="#">
+                                <div class="nftsniperbotc-type_title">
+                                    <h6>Step 3.</h6>
+                                    <p>Approve the transaction when prompted. Our app increases your chances and reduces
+                                        others.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-img-2">
+                <img src="images/banner2.png" width="978" class="img-fluid" alt="#">
+            </div>
+        </div>
+        <!--//END NEW nftsniperbotc -->
+    </header>
+    <!--//END HEADER -->
+
+    <!--==================== Do it. Do it now ====================-->
+    <section class="space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-title">
+                        <h2>Hundreds of Happy Buyers</h2>
+                        <p>Easy as One, Two, Three</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box howit-block">
+                        <div class="item-icon color1">
+                            <span>1</span>
+                        </div>
+                        <h6>STEP 1</h6>
+                        <p>After purchase, register for an account using your wallet and txid. Once Logged in just enter
+                            the URL of the drop. Click Run Bot.<br /></p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box howit-block_af">
+                        <div class="item-icon color2">
+                            <span>2</span>
+                        </div>
+                        <h6>STEP 2</h6>
+                        <p> The bot scans the page, finds the mint button; pre-trained from hundreds of drops. The bot
+                            will attempt to load the page and click much quicker than you and with lower resources usage.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color3">
+                            <span>3</span>
+                        </div>
+                        <h6>STEP 3</h6>
+                        <p>Approve the transaction when prompted. Our app increases your chances and reduces others.
+                            Increase your odds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// END -->
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="testimonial">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 col-lg-7 align-items-center">
+                    <div class="testi-content_block">
+                        <img src="images/quote.png" class="img-fluid" alt="#">
+                        <h3>I missed so many drops. I tried NFTSniper and got my first NFT in seconds after the drop. I
+                            sold that NFT for over 80% profit.</h3>
+                        <span>M. Jerrod</span>
+                        <p>Legal Consultant</p>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12 col-lg-5 align-items-baseline">
+    <div class="testi-img_wrap">
+        <img src="images/testi-img.png" class="img-fluid" alt="#">
+    </div>
+</div> -->
+            </div>
+        </div>
+        <div class="testi-img_wrap">
+            <img src="images/testi-img.png" class="img-fluid" alt="#" width="650">
+        </div>
+        <!-- <div class="bg-img3"><img src="images/bg-image3.png" class="img-fluid" alt="#"></div> -->
+    </section>
+    <!--//END TESTIMONIAL -->
+    <!--==================== ADD ====================-->
+    <section class="add-section clearfix">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="add-box">
+                        <img src="images/shield-green.svg" class="img-fluid shield" alt="#">
+                        <div class="add-content">
+                            <h3> 100% Satisfaction Guarantee</h3>
+                            <p>We offer no questions asked refund for any privacy breach for 30 days from the purchase
+                                date.</p>
+                            <p>Your data is safe with us. We only store public address, name, email, and 1 txid.</p>
+                        </div>
+                        <div class="add-btn">
+                            <a href="#" data-toggle="modal" data-target="#contactmodal" class="btn btn-success">BUY
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END ADD -->
+
+    <!--==================== COLLAPSE ====================-->
+    <section class="collapse-set">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-7 offset-md-1">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What should I do while the bot is running?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <p class="card-body">
+                                    Obviously you should try on your own browser as well. Even if you only provide 1
+                                    additional click, it could still be the click!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How well does it work? Will I always get the drop?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <p class="card-body">
+                                    Your odds of getting the mint are drastically higher (in many cases hundreds of
+                                    times). We cannot however Guarantee every single drop you try.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Why do you need my wallet and txid?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <p class="card-body">
+                                    We don't want you to have to connect anything to our site. We only ask for the
+                                    wallet public address and txid from the purchase for verification.
+                                    All calls still come directly from your wallet to the mint site. We recommend only
+                                    using firefox. Your security is a top priority. We encrypt all data and do not store
+                                    any user data beyond your initial registration.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" aria-labelledby="headingFour"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        How does it work?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <p class="card-body">
+                                    The app runs fully on server with a connection to your browser. Once you enter the
+                                    mint url and click run bot it will launch based on your slider selections (number of
+                                    bots, ai assistance, frequency, hops).
+                                    You may have entered your wallet and txid incorrectly. Please respond to your
+                                    registration email if you believe this is the case. Do not share your login or login
+                                    in multiple times. NFTSniper is a tool, it is meant to be used for its task. Sharing
+                                    your login or suspicious usage will deactivate your account. You must email the
+                                    registration email and correct wallet information to reactivate. Only 1 license per
+                                    user.
+                                    <br />NFTSniper is one of the most advanced platforms with machine learning using
+                                    computer vision. This is the future of mints and your weapon against the other bots.
+                                    It is not designed for use by those under 18 years old. Please check local laws
+                                    prior to using. Snipe from a distance, get your mint.<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END COLLAPSE -->
+    <!--==================== ADD ====================-->
+    <section class="add-section clearfix collapse-wrap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="add-box">
+                        <img src="images/shield-green.svg" class="img-fluid shield" alt="#">
+                        <div class="add-content">
+                            <h3>Snipe your NFT</h3>
+                            <p>At NFTsniper, we are commited to provide top-notch services to our customers.</p>
+                        </div>
+                        <div class="add-btn">
+                            <a href="#" data-toggle="modal" data-target="#contactmodal" class="btn btn-success">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-bg02">
+            <img src="images/banner3.png" width="569" class="img-fluid" alt="#">
+        </div>
+    </section>
+    <!--//END ADD -->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="responsive-bg">
+                        <img src="images/banner3.png" width="569" class="img-fluid" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==================== FOOTER ====================-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-title">
+                        <h6>ADDRESS</h6>
+                        <p>Here<br>
+                            right beside you all<br>
+                            <br>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h6></h6>
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-title">
+                        <h6>Snipe your NFT</h6>
+                        <p>Compellingly market-driven infrastructures. Huh. Monotonectally exploit tactical markets
+                            vis-a-vis excellent deliverables. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2442. NFTSNIPER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--//END FOOTER -->
+    <!--  JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Contact js -->
+    <script src="js/validate.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
