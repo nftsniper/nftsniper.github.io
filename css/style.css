@@ -1330,3 +1330,12 @@ footer {
   font-size: 20px;
   margin: 0 0 10px;
 }
+a {
+  color: #ffffff;
+}
+a:hover {
+  color: #eeb04c;
+}
+li.nav-item.active {
+  padding-right: 10px;
+}
